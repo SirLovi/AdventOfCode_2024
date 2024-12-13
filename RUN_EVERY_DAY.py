@@ -19,7 +19,7 @@ for day_number in range(1, 26):
     print(f"Processing day {day_number}...")
 
     # Create directory for the day if it doesn't exist
-    day_directory = f"./Day_{day_number}"
+    day_directory = f"./Day_{day_number:02d}"
     if not path.exists(day_directory):
         makedirs(day_directory)
 
